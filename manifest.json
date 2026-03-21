@@ -1,0 +1,22 @@
+{
+  "name": "OEVER.ART — Vermeer Reinterpretations",
+  "short_name": "OEVER.ART",
+  "description": "Seven contemporary reinterpretations of Vermeer's Girl with a Pearl Earring",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#2d2a26",
+  "theme_color": "#2d2a26",
+  "icons": [
+    {
+      "src": "img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
