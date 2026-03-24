@@ -1,1292 +1,241 @@
 <!DOCTYPE html>
-<html lang="nl" dir="ltr">
+<html lang="nl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<!-- Preconnect -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<!-- Font: Inter — premium, slightly squared, structured sans -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-<!-- Favicon -->
-<link rel="icon" type="image/x-icon" href="img/favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#2d2a26">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-<!-- SEO: NL default, will be updated by JS for EN -->
-<title>Zeven Herinterpretaties van Vermeer | OEVER.ART — Collectie Meisje met de Parel</title>
-<meta name="description" content="Ontdek zeven eigentijdse herinterpretaties van Johannes Vermeer's Meisje met de Parel door OEVER.ART. Collectible wandkunst waar klassieke sfeer en moderne spanning samenkomen. Exclusief verkrijgbaar.">
-<link rel="canonical" href="https://oever.art/">
-<link rel="alternate" hreflang="nl" href="https://oever.art/?lang=nl">
-<link rel="alternate" hreflang="en" href="https://oever.art/?lang=en">
-<link rel="alternate" hreflang="x-default" href="https://oever.art/">
-
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="OEVER.ART">
-<meta property="og:title" content="Zeven Herinterpretaties van Vermeer — OEVER.ART">
-<meta property="og:description" content="Eigentijdse Vermeer-herinterpretaties. Licht, textuur, onderbreking en transformatie. Collectible wandkunst door Floris van den Oever.">
-<meta property="og:image" content="https://oever.art/img/og-image.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:url" content="https://oever.art/">
-<meta property="og:locale" content="nl_NL">
-<meta property="og:locale:alternate" content="en_US">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Zeven Herinterpretaties van Vermeer — OEVER.ART">
-<meta name="twitter:description" content="Eigentijdse Vermeer-herinterpretaties. Collectible wandkunst door Floris van den Oever.">
-<meta name="twitter:image" content="https://oever.art/img/og-image.jpg">
-
-<!-- JSON-LD Structured Data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "Zeven Herinterpretaties van Vermeer",
-  "description": "Seven contemporary reinterpretations of Johannes Vermeer's Girl with a Pearl Earring by OEVER.ART. Collectible wall art where classical atmosphere meets modern tension.",
-  "url": "https://oever.art/",
-  "author": {
-    "@type": "Person",
-    "name": "Floris van den Oever",
-    "url": "https://www.instagram.com/oever.art/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "OEVER.ART",
-    "url": "https://oever.art/",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://oever.art/img/logo-oever.svg"
-    }
-  },
-  "about": {
-    "@type": "VisualArtwork",
-    "name": "Girl with a Pearl Earring",
-    "creator": {
-      "@type": "Person",
-      "name": "Johannes Vermeer"
-    },
-    "dateCreated": "1665"
-  },
-  "numberOfItems": 7,
-  "keywords": ["Vermeer", "Johannes Vermeer", "Meisje met de Parel", "Girl with a Pearl Earring", "contemporary art", "wall art", "collectible art", "Vermeer collectie", "kunstwerk Vermeer kopen"]
-}
-</script>
-
-<style>
-/* ========================================================================
-   OEVER.ART — Vermeer Series
-   Premium one-page sales website
-   ======================================================================== */
-
-/* --- Reset & Base --- */
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{
-  scroll-behavior:smooth;
-  -webkit-text-size-adjust:100%;
-  text-size-adjust:100%;
-  overflow-x:hidden;
-}
-body{
-  font-family:'Inter',system-ui,-apple-system,sans-serif;
-  font-weight:400;
-  font-size:16px;
-  line-height:1.6;
-  color:#2d2a26;
-  background:#2d2a26;
-  overflow-x:hidden;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-}
-
-/* --- CSS Custom Properties --- */
-:root{
-  --color-bg-dark:#2d2a26;
-  --color-text-primary:#2d2a26;
-  --color-text-light:#f5f0ea;
-  --color-text-muted:#8a847c;
-  --color-accent-blue:#2b6cb0;
-  --color-accent-blue-hover:#1e5a9a;
-  --color-accent-blue-active:#194d85;
-  --color-warm-ivory:#f5f0ea;
-  --color-parchment:#ede7dd;
-  --color-sand:#d4cdc3;
-  --color-taupe:#a89f94;
-  --color-gold-muted:#b8a67a;
-  --radius-base:5px;
-  --radius-lg:8px;
-  --space-xs:4px;
-  --space-sm:8px;
-  --space-md:16px;
-  --space-lg:24px;
-  --space-xl:40px;
-  --space-2xl:64px;
-  --space-3xl:96px;
-  --space-4xl:128px;
-  --safe-bottom:env(safe-area-inset-bottom, 0px);
-  --safe-top:env(safe-area-inset-top, 0px);
-  --safe-left:env(safe-area-inset-left, 0px);
-  --safe-right:env(safe-area-inset-right, 0px);
-}
-
-/* --- Animated Gradient Wallpaper Background --- */
-.bg-wallpaper{
-  position:fixed;
-  inset:0;
-  z-index:0;
-  overflow:hidden;
-  will-change:transform;
-}
-.bg-wallpaper::before,
-.bg-wallpaper::after{
-  content:'';
-  position:absolute;
-  inset:-60%;
-  will-change:transform;
-}
-.bg-wallpaper::before{
-  background:
-    radial-gradient(ellipse 80% 60% at 70% 60%, #d4cdc3 0%, transparent 55%),
-    radial-gradient(ellipse 70% 50% at 30% 40%, #ede7dd 0%, transparent 50%),
-    radial-gradient(ellipse 90% 70% at 50% 70%, #c4b99a 0%, transparent 60%),
-    radial-gradient(ellipse 60% 80% at 80% 30%, #f5f0ea 0%, transparent 45%),
-    linear-gradient(135deg, #b8a67a 0%, #d4cdc3 25%, #ede7dd 50%, #a89f94 75%, #c4b99a 100%);
-  animation:wallpaper-drift 28s linear infinite;
-  opacity:0.92;
-}
-.bg-wallpaper::after{
-  background:
-    radial-gradient(ellipse 60% 50% at 60% 50%, #f5f0ea 0%, transparent 50%),
-    radial-gradient(ellipse 80% 60% at 25% 65%, #d4cdc3 0%, transparent 55%),
-    radial-gradient(ellipse 50% 70% at 75% 25%, #c4b99a 0%, transparent 45%),
-    linear-gradient(135deg, #a89f94 0%, #ede7dd 30%, #d4cdc3 60%, #b8a67a 100%);
-  animation:wallpaper-drift-2 36s linear infinite;
-  opacity:0.65;
-  mix-blend-mode:soft-light;
-}
-
-@keyframes wallpaper-drift{
-  0%{transform:translate(0,0) rotate(0deg) scale(1)}
-  25%{transform:translate(8%,8%) rotate(2deg) scale(1.02)}
-  50%{transform:translate(15%,15%) rotate(0deg) scale(1)}
-  75%{transform:translate(8%,8%) rotate(-2deg) scale(1.02)}
-  100%{transform:translate(0,0) rotate(0deg) scale(1)}
-}
-@keyframes wallpaper-drift-2{
-  0%{transform:translate(0,0) rotate(0deg) scale(1.05)}
-  25%{transform:translate(6%,10%) rotate(-1.5deg) scale(1)}
-  50%{transform:translate(12%,18%) rotate(0deg) scale(1.05)}
-  75%{transform:translate(6%,10%) rotate(1.5deg) scale(1)}
-  100%{transform:translate(0,0) rotate(0deg) scale(1.05)}
-}
-
-/* Depth overlay for text readability */
-.bg-wallpaper-overlay{
-  position:fixed;
-  inset:0;
-  z-index:1;
-  background:radial-gradient(ellipse at center, transparent 0%, rgba(45,42,38,0.08) 100%);
-  pointer-events:none;
-}
-
-/* Reduced motion */
-@media(prefers-reduced-motion:reduce){
-  .bg-wallpaper::before,
-  .bg-wallpaper::after{animation:none!important}
-  .artwork-section{animation:none!important}
-  .reveal{animation:none!important;opacity:1!important;transform:none!important}
-}
-
-/* --- Main Content Layer --- */
-.site-wrapper{
-  position:relative;
-  z-index:2;
-  min-height:100vh;
-}
-
-/* --- Header --- */
-.site-header{
-  position:fixed;
-  top:0;
-  left:0;
-  right:0;
-  z-index:100;
-  padding:var(--space-md) var(--space-lg);
-  padding-top:calc(var(--safe-top) + var(--space-md));
-  padding-left:calc(var(--safe-left) + var(--space-lg));
-  padding-right:calc(var(--safe-right) + var(--space-lg));
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  backdrop-filter:blur(20px) saturate(1.2);
-  -webkit-backdrop-filter:blur(20px) saturate(1.2);
-  background:rgba(237,231,221,0.72);
-  border-bottom:1px solid rgba(168,159,148,0.15);
-  transition:background 0.4s ease, box-shadow 0.4s ease;
-}
-.site-header.scrolled{
-  background:rgba(237,231,221,0.88);
-  box-shadow:0 1px 12px rgba(45,42,38,0.08);
-}
-
-.header-logo{
-  display:flex;
-  align-items:center;
-  gap:var(--space-sm);
-  text-decoration:none;
-  color:var(--color-text-primary);
-}
-.header-logo svg{
-  width:36px;
-  height:36px;
-}
-.header-logo-text{
-  font-size:18px;
-  font-weight:800;
-  letter-spacing:0.04em;
-  text-transform:uppercase;
-  color:var(--color-text-primary);
-}
-
-.header-right{
-  display:flex;
-  align-items:center;
-  gap:var(--space-md);
-}
-
-/* Language toggle */
-.lang-toggle{
-  display:flex;
-  align-items:center;
-  gap:2px;
-  background:rgba(45,42,38,0.06);
-  border-radius:var(--radius-base);
-  padding:2px;
-  border:1px solid rgba(45,42,38,0.08);
-}
-.lang-btn{
-  border:none;
-  background:transparent;
-  font-family:inherit;
-  font-size:12px;
-  font-weight:600;
-  letter-spacing:0.05em;
-  padding:6px 10px;
-  border-radius:3px;
-  cursor:pointer;
-  color:var(--color-text-muted);
-  transition:all 0.2s ease;
-}
-.lang-btn.active{
-  background:var(--color-text-primary);
-  color:var(--color-text-light);
-}
-
-/* Artist badge */
-.artist-badge{
-  display:flex;
-  align-items:center;
-  gap:6px;
-  text-decoration:none;
-}
-.artist-badge svg{
-  width:22px;
-  height:22px;
-  flex-shrink:0;
-}
-.artist-badge-handle{
-  font-size:14px;
-  font-weight:700;
-  color:var(--color-text-primary);
-  letter-spacing:0.01em;
-}
-@media(max-width:480px){
-  .artist-badge-handle{display:none}
-}
-
-/* --- Hero Section --- */
-.hero{
-  min-height:100vh;
-  min-height:100dvh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  padding:calc(80px + var(--safe-top)) var(--space-lg) var(--space-3xl);
-  position:relative;
-}
-
-.hero-inner{
-  max-width:640px;
-  width:100%;
-}
-
-.hero-eyebrow{
-  font-size:11px;
-  font-weight:700;
-  letter-spacing:0.18em;
-  text-transform:uppercase;
-  color:var(--color-taupe);
-  margin-bottom:var(--space-lg);
-  opacity:0;
-  transform:translateY(20px);
-  animation:reveal-up 0.8s ease 0.3s forwards;
-}
-
-.hero-title{
-  font-size:clamp(28px, 6vw, 52px);
-  font-weight:800;
-  line-height:1.1;
-  letter-spacing:-0.02em;
-  color:var(--color-text-primary);
-  margin-bottom:var(--space-lg);
-  opacity:0;
-  transform:translateY(20px);
-  animation:reveal-up 0.8s ease 0.5s forwards;
-}
-
-.hero-subtitle{
-  font-size:clamp(15px, 2.5vw, 18px);
-  font-weight:400;
-  line-height:1.65;
-  color:rgba(45,42,38,0.72);
-  margin-bottom:var(--space-xl);
-  max-width:520px;
-  margin-left:auto;
-  margin-right:auto;
-  opacity:0;
-  transform:translateY(20px);
-  animation:reveal-up 0.8s ease 0.7s forwards;
-}
-
-/* Exclusive availability line */
-.hero-exclusive{
-  display:inline-block;
-  font-size:13px;
-  font-weight:700;
-  color:var(--color-accent-blue);
-  letter-spacing:0.02em;
-  padding:var(--space-sm) var(--space-md);
-  background:rgba(43,108,176,0.06);
-  border:1px solid rgba(43,108,176,0.12);
-  border-radius:var(--radius-base);
-  margin-bottom:var(--space-xl);
-  opacity:0;
-  transform:translateY(20px);
-  animation:reveal-up 0.8s ease 0.9s forwards;
-}
-
-.hero-cta{
-  opacity:0;
-  transform:translateY(20px);
-  animation:reveal-up 0.8s ease 1.1s forwards;
-}
-
-@keyframes reveal-up{
-  to{opacity:1;transform:translateY(0)}
-}
-
-/* Scroll indicator */
-.hero-scroll{
-  position:absolute;
-  bottom:var(--space-xl);
-  left:50%;
-  transform:translateX(-50%);
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:var(--space-sm);
-  opacity:0;
-  animation:reveal-up 0.8s ease 1.5s forwards;
-}
-.hero-scroll-line{
-  width:1px;
-  height:40px;
-  background:linear-gradient(to bottom, var(--color-taupe), transparent);
-  animation:scroll-pulse 2s ease infinite;
-}
-@keyframes scroll-pulse{
-  0%,100%{opacity:0.3;transform:scaleY(0.6)}
-  50%{opacity:0.8;transform:scaleY(1)}
-}
-.hero-scroll-text{
-  font-size:10px;
-  font-weight:600;
-  letter-spacing:0.2em;
-  text-transform:uppercase;
-  color:var(--color-taupe);
-}
-
-/* --- CTA Button --- */
-.cta-btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:10px;
-  padding:14px 32px;
-  background:var(--color-accent-blue);
-  color:#fff;
-  font-family:inherit;
-  font-size:15px;
-  font-weight:700;
-  letter-spacing:0.03em;
-  text-decoration:none;
-  border:none;
-  border-radius:var(--radius-base);
-  cursor:pointer;
-  transition:all 0.25s ease;
-  position:relative;
-  overflow:hidden;
-}
-.cta-btn:hover{
-  background:var(--color-accent-blue-hover);
-  transform:translateY(-1px);
-  box-shadow:0 4px 20px rgba(43,108,176,0.25);
-}
-.cta-btn:active{
-  background:var(--color-accent-blue-active);
-  transform:translateY(0);
-  box-shadow:0 2px 8px rgba(43,108,176,0.2);
-}
-.cta-btn:focus-visible{
-  outline:2px solid var(--color-accent-blue);
-  outline-offset:3px;
-}
-.cta-btn svg{
-  width:18px;
-  height:18px;
-  flex-shrink:0;
-}
-
-.cta-btn--secondary{
-  background:transparent;
-  color:var(--color-accent-blue);
-  border:2px solid var(--color-accent-blue);
-}
-.cta-btn--secondary:hover{
-  background:rgba(43,108,176,0.06);
-  box-shadow:none;
-}
-
-/* --- Artwork Sections --- */
-.artwork-section{
-  min-height:100vh;
-  min-height:100dvh;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  padding:var(--space-3xl) var(--space-lg);
-  position:relative;
-}
-
-.artwork-container{
-  max-width:560px;
-  width:100%;
-  position:relative;
-}
-
-.artwork-frame{
-  position:relative;
-  width:100%;
-  border-radius:var(--radius-lg);
-  overflow:hidden;
-  background:var(--color-bg-dark);
-  box-shadow:
-    0 2px 8px rgba(45,42,38,0.08),
-    0 8px 32px rgba(45,42,38,0.12),
-    0 24px 64px rgba(45,42,38,0.08);
-}
-
-.artwork-img{
-  display:block;
-  width:100%;
-  height:auto;
-  aspect-ratio:3/4;
-  object-fit:cover;
-  transition:transform 0.6s ease;
-}
-
-.artwork-frame:hover .artwork-img{
-  transform:scale(1.015);
-}
-
-.artwork-meta{
-  text-align:center;
-  margin-top:var(--space-xl);
-}
-
-.artwork-number{
-  font-size:11px;
-  font-weight:700;
-  letter-spacing:0.2em;
-  text-transform:uppercase;
-  color:var(--color-taupe);
-  margin-bottom:var(--space-sm);
-}
-
-.artwork-title{
-  font-size:clamp(20px, 4vw, 28px);
-  font-weight:700;
-  color:var(--color-text-primary);
-  line-height:1.2;
-  margin-bottom:var(--space-sm);
-}
-
-.artwork-subtitle{
-  font-size:14px;
-  font-weight:500;
-  color:var(--color-text-muted);
-  letter-spacing:0.01em;
-}
-
-/* Reveal animations for artwork sections */
-.reveal{
-  opacity:0;
-  transform:translateY(40px);
-  transition:opacity 0.8s ease, transform 0.8s ease;
-}
-.reveal.visible{
-  opacity:1;
-  transform:translateY(0);
-}
-
-/* --- Mid-page CTA Section --- */
-.mid-cta{
-  padding:var(--space-3xl) var(--space-lg);
-  text-align:center;
-}
-.mid-cta-inner{
-  max-width:480px;
-  margin:0 auto;
-  padding:var(--space-2xl) var(--space-xl);
-  background:rgba(245,240,234,0.65);
-  backdrop-filter:blur(16px);
-  -webkit-backdrop-filter:blur(16px);
-  border:1px solid rgba(168,159,148,0.12);
-  border-radius:var(--radius-lg);
-}
-.mid-cta-title{
-  font-size:clamp(20px, 4vw, 28px);
-  font-weight:800;
-  color:var(--color-text-primary);
-  margin-bottom:var(--space-md);
-  line-height:1.2;
-}
-.mid-cta-text{
-  font-size:15px;
-  color:rgba(45,42,38,0.68);
-  margin-bottom:var(--space-lg);
-  line-height:1.6;
-}
-
-/* --- Footer / Closing Section --- */
-.site-footer{
-  padding:var(--space-3xl) var(--space-lg);
-  padding-bottom:calc(var(--space-3xl) + var(--safe-bottom) + 80px);
-  text-align:center;
-}
-.footer-inner{
-  max-width:480px;
-  margin:0 auto;
-}
-.footer-logo{
-  margin-bottom:var(--space-lg);
-}
-.footer-logo svg{
-  width:48px;
-  height:48px;
-  opacity:0.6;
-}
-.footer-text{
-  font-size:13px;
-  color:var(--color-text-muted);
-  margin-bottom:var(--space-lg);
-  line-height:1.6;
-}
-.footer-links{
-  display:flex;
-  justify-content:center;
-  gap:var(--space-lg);
-  margin-bottom:var(--space-xl);
-}
-.footer-link{
-  font-size:13px;
-  font-weight:600;
-  color:var(--color-text-muted);
-  text-decoration:none;
-  transition:color 0.2s ease;
-}
-.footer-link:hover{color:var(--color-text-primary)}
-.footer-copy{
-  font-size:11px;
-  color:var(--color-taupe);
-  letter-spacing:0.02em;
-}
-
-/* --- Sticky CTA --- */
-.sticky-cta{
-  position:fixed;
-  bottom:0;
-  left:0;
-  right:0;
-  z-index:90;
-  padding:var(--space-md) var(--space-lg);
-  padding-bottom:calc(var(--space-md) + var(--safe-bottom));
-  background:rgba(237,231,221,0.88);
-  backdrop-filter:blur(20px);
-  -webkit-backdrop-filter:blur(20px);
-  border-top:1px solid rgba(168,159,148,0.15);
-  display:flex;
-  justify-content:center;
-  transform:translateY(100%);
-  transition:transform 0.4s ease, opacity 0.4s ease;
-  opacity:0;
-}
-.sticky-cta.visible{
-  transform:translateY(0);
-  opacity:1;
-}
-.sticky-cta.hidden-footer{
-  transform:translateY(100%);
-  opacity:0;
-}
-.sticky-cta .cta-btn{
-  width:100%;
-  max-width:400px;
-}
-
-/* --- Responsive --- */
-@media(min-width:768px){
-  .site-header{
-    padding:var(--space-md) var(--space-xl);
-  }
-  .hero{
-    padding:calc(100px + var(--safe-top)) var(--space-xl) var(--space-4xl);
-  }
-  .artwork-container{
-    max-width:480px;
-  }
-  .artwork-section{
-    padding:var(--space-4xl) var(--space-xl);
-  }
-}
-@media(min-width:1024px){
-  .site-header{
-    padding:var(--space-md) var(--space-2xl);
-  }
-  .artwork-container{
-    max-width:520px;
-  }
-  .hero-inner{
-    max-width:720px;
-  }
-}
-@media(min-width:1440px){
-  .artwork-container{
-    max-width:560px;
-  }
-}
-
-/* --- Print --- */
-@media print{
-  .bg-wallpaper,.bg-wallpaper-overlay,.sticky-cta,.site-header{display:none!important}
-  .site-wrapper{position:static}
-  .artwork-section{min-height:auto;page-break-inside:avoid}
-}
-
-/* --- Focus visible --- */
-:focus-visible{
-  outline:2px solid var(--color-accent-blue);
-  outline-offset:2px;
-}
-a:focus:not(:focus-visible),button:focus:not(:focus-visible){outline:none}
-
-/* --- Selection --- */
-::selection{
-  background:rgba(43,108,176,0.15);
-  color:var(--color-text-primary);
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OEVER.ART | Seven Reinterpretations of Vermeer</title>
+  <meta name="description" content="Premium one-page art website for seven reinterpretations of Vermeer by OEVER.ART." />
+  <link rel="preload" href="assets/oever-logo-traced.svg" as="image" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="site-bg" aria-hidden="true">
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+    <div class="dust dust-a"></div>
+    <div class="dust dust-b"></div>
+    <svg class="hero-outline" viewBox="0 0 800 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M429 155c58 5 129 52 160 128c38 94 16 196-55 275c-21 24-47 45-67 73c-34 45-40 104-15 154" />
+      <path d="M515 219c32 22 53 60 53 104c0 70-52 125-124 139" />
+      <path d="M319 455c12 111 81 180 165 226c91 51 131 121 115 212" />
+      <path d="M367 202c-90 62-134 165-116 267c13 75 53 134 110 187" />
+      <circle cx="520" cy="402" r="30" />
+    </svg>
+    <div class="grain"></div>
+  </div>
 
-<!-- =====================================================================
-     ANIMATED GRADIENT WALLPAPER BACKGROUND
-     ===================================================================== -->
-<div class="bg-wallpaper" aria-hidden="true"></div>
-<div class="bg-wallpaper-overlay" aria-hidden="true"></div>
-
-<!-- =====================================================================
-     SITE WRAPPER
-     ===================================================================== -->
-<div class="site-wrapper">
-
-  <!-- =================================================================
-       HEADER
-       ================================================================= -->
-  <header class="site-header" role="banner">
-    <a href="/" class="header-logo" aria-label="OEVER.ART home">
-      <!-- Logo SVG — octopus line art from source -->
-      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <circle cx="50" cy="38" r="22" stroke="#2d2a26" stroke-width="3" fill="none"/>
-        <circle cx="42" cy="33" r="3.5" fill="#2d2a26"/>
-        <circle cx="58" cy="33" r="3.5" fill="#2d2a26"/>
-        <path d="M40 44 Q42 50 36 62 Q32 70 28 74" stroke="#2d2a26" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-        <path d="M46 46 Q47 54 42 66 Q39 72 38 78" stroke="#2d2a26" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-        <path d="M54 46 Q53 54 58 66 Q61 72 62 78" stroke="#2d2a26" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-        <path d="M60 44 Q58 50 64 62 Q68 70 72 74" stroke="#2d2a26" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-        <path d="M35 42 Q30 48 24 58 Q20 65 18 70" stroke="#2d2a26" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-        <path d="M65 42 Q70 48 76 58 Q80 65 82 70" stroke="#2d2a26" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-        <!-- Small suction cups -->
-        <circle cx="28" cy="74" r="2" fill="#2d2a26"/>
-        <circle cx="38" cy="78" r="2" fill="#2d2a26"/>
-        <circle cx="62" cy="78" r="2" fill="#2d2a26"/>
-        <circle cx="72" cy="74" r="2" fill="#2d2a26"/>
-        <circle cx="18" cy="70" r="2" fill="#2d2a26"/>
-        <circle cx="82" cy="70" r="2" fill="#2d2a26"/>
-      </svg>
-      <span class="header-logo-text">OEVER<span style="opacity:0.4;font-weight:400">.ART</span></span>
+  <header class="site-header">
+    <a href="#top" class="brand">
+      <span class="brand-mark-wrap"><img src="assets/oever-mark-animated.svg" alt="" class="brand-mark" /></span>
+      <img src="assets/oever-logo-traced.svg" alt="OEVER.ART" class="brand-logo" />
     </a>
 
-    <div class="header-right">
-      <!-- Language Toggle -->
-      <div class="lang-toggle" role="group" aria-label="Language">
-        <button class="lang-btn active" data-lang="nl" aria-pressed="true">NL</button>
-        <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
-      </div>
+    <nav class="desktop-nav">
+      <a href="#collection" data-i18n="nav.collection">Collectie</a>
+      <a href="#story" data-i18n="nav.story">Verhaal</a>
+      <a href="#materials" data-i18n="nav.materials">Materialen</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+    </nav>
 
-      <!-- Artist Badge + Instagram Link -->
-      <a href="https://www.instagram.com/oever.art/" target="_blank" rel="nofollow noopener noreferrer" class="artist-badge" aria-label="@oever.art op Instagram">
-        <!-- Custom trust badge SVG -->
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M12 2L14.9 4.3L18.5 3.8L19.4 7.3L22.5 9.1L21.3 12.5L22.5 15.9L19.4 17.7L18.5 21.2L14.9 20.7L12 23L9.1 20.7L5.5 21.2L4.6 17.7L1.5 15.9L2.7 12.5L1.5 9.1L4.6 7.3L5.5 3.8L9.1 4.3L12 2Z" fill="#2d2a26"/>
-          <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="artist-badge-handle">@oever.art</span>
-      </a>
+    <div class="header-actions">
+      <div class="lang-toggle" role="group" aria-label="Language switch">
+        <button class="lang-btn is-active" data-lang-switch="nl">NL</button>
+        <button class="lang-btn" data-lang-switch="en">EN</button>
+      </div>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
     </div>
   </header>
 
-  <!-- =================================================================
-       HERO
-       ================================================================= -->
-  <main role="main">
-  <section class="hero" id="top" aria-labelledby="hero-title">
-    <div class="hero-inner">
-      <p class="hero-eyebrow" data-i18n="eyebrow">Collectie 2024 — Zeven Werken</p>
+  <div class="mobile-panel" hidden>
+    <nav class="mobile-nav">
+      <a href="#collection" data-i18n="nav.collection">Collectie</a>
+      <a href="#story" data-i18n="nav.story">Verhaal</a>
+      <a href="#materials" data-i18n="nav.materials">Materialen</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="#final-cta" data-i18n="nav.buy">Shop now</a>
+    </nav>
+  </div>
 
-      <h1 class="hero-title" id="hero-title" data-i18n="heroTitle">
-        Vermeer<br>Herinterpretaties
-      </h1>
+  <main id="top">
+    <section class="hero section">
+      <div class="eyebrow" data-i18n="hero.eyebrow">OEVER.ART presents</div>
+      <div class="hero-grid">
+        <div class="hero-copy panel">
+          <p class="micro-copy" data-i18n="hero.micro">Seven reinterpretations of a Dutch icon</p>
+          <h1 data-i18n="hero.title">Vermeer, fractured into seven collectible statements.</h1>
+          <p class="hero-text" data-i18n="hero.text">Museum mood, contemporary tension, and a direct path to buy each artwork on Werk aan de Muur.</p>
+          <div class="hero-cta-row">
+            <a class="btn btn-primary" href="#collection" data-i18n="hero.ctaPrimary">Explore the 7 works</a>
+            <a class="btn btn-secondary" href="#final-cta" data-i18n="hero.ctaSecondary">Buy your favourite</a>
+          </div>
+          <div class="trust-strip">
+            <div class="trust-item"><strong>4.8/5</strong><span data-i18n="trust.rating">reviews on Werk aan de Muur</span></div>
+            <div class="trust-item"><strong>350k+</strong><span data-i18n="trust.walls">walls filled</span></div>
+            <div class="trust-item"><strong data-i18n="trust.shippingStrong">Free</strong><span data-i18n="trust.shipping">shipping</span></div>
+          </div>
+        </div>
 
-      <p class="hero-subtitle" data-i18n="heroSubtitle">
-        Zeven eigentijdse herinterpretaties van het Meisje met de Parel. Licht, textuur, onderbreking en transformatie &mdash; klassieke sfeer ontmoet moderne spanning. Door OEVER.ART &amp; Floris van den Oever.
-      </p>
+        <div class="hero-spotlight panel">
+          <div class="spotlight-stack">
+            <img src="assets/artwork-1.webp" alt="Poederexplosie" class="spotlight-main" />
+            <img src="assets/artwork-4.webp" alt="" class="spotlight-float spotlight-float-a" />
+            <img src="assets/artwork-6.webp" alt="" class="spotlight-float spotlight-float-b" />
+          </div>
+          <div class="spotlight-caption">
+            <span data-i18n="hero.caption">Premium fine-art prints, each with its own material disruption.</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <p class="hero-exclusive" data-i18n="exclusive">
-        Exclusief verkrijgbaar op werkaandemuur.nl
-      </p>
+    <section class="section collection" id="collection">
+      <div class="section-head">
+        <div class="eyebrow" data-i18n="collection.eyebrow">Collection</div>
+        <h2 data-i18n="collection.title">All seven works, each with a direct premium buy route.</h2>
+        <p data-i18n="collection.text">The order below follows the uploaded artwork set exactly, with each CTA linked to the matching Werk aan de Muur page.</p>
+      </div>
+      <div class="art-grid" id="art-grid"></div>
+    </section>
 
-      <div class="hero-cta">
-        <a href="#" class="cta-btn" id="hero-cta-btn" data-i18n-text="ctaLabel">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-            <line x1="3" y1="6" x2="21" y2="6"/>
-            <path d="M16 10a4 4 0 01-8 0"/>
-          </svg>
-          <span data-i18n="ctaLabel">Bestel nu</span>
-        </a>
+    <section class="section story" id="story">
+      <div class="split-grid">
+        <div class="panel story-panel">
+          <div class="eyebrow" data-i18n="story.eyebrow">Story</div>
+          <h2 data-i18n="story.title">Where classical calm meets material rupture.</h2>
+          <p data-i18n="story.p1">This series reworks Vermeer through fracture, powder, chrome, ink, haze and gold, keeping the stillness intact while changing the surface tension.</p>
+          <p data-i18n="story.p2">That contrast does the real selling work: familiar at first glance, collectible on the second.</p>
+        </div>
+        <div class="panel quote-panel">
+          <div class="quote-mark">“</div>
+          <p data-i18n="story.quote">A premium art page should not look like a shop first. It should make desire feel inevitable, then remove friction.</p>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="hero-scroll" aria-hidden="true">
-      <div class="hero-scroll-line"></div>
-      <span class="hero-scroll-text" data-i18n="scrollText">Scroll</span>
-    </div>
-  </section>
+    <section class="section materials" id="materials">
+      <div class="section-head">
+        <div class="eyebrow" data-i18n="materials.eyebrow">Why buy here</div>
+        <h2 data-i18n="materials.title">Print confidence, without the generic sales pitch.</h2>
+      </div>
+      <div class="benefit-grid">
+        <article class="panel benefit">
+          <h3 data-i18n="materials.b1title">Choose your size and material</h3>
+          <p data-i18n="materials.b1text">Each artwork opens on its own Werk aan de Muur page, where the buyer can select format, size and finish.</p>
+        </article>
+        <article class="panel benefit">
+          <h3 data-i18n="materials.b2title">Fine-art oriented presentation</h3>
+          <p data-i18n="materials.b2text">The works are sold as premium wall art, not as disposable poster filler.</p>
+        </article>
+        <article class="panel benefit">
+          <h3 data-i18n="materials.b3title">Immediate buy flow</h3>
+          <p data-i18n="materials.b3text">Every card has its own dedicated CTA, opening in a fresh tab so the main collection stays intact.</p>
+        </article>
+      </div>
+    </section>
 
-  <!-- =================================================================
-       ARTWORK SECTIONS
-       Ordered per sales sequence specification
-       ================================================================= -->
+    <section class="section faq" id="faq">
+      <div class="section-head">
+        <div class="eyebrow">FAQ</div>
+        <h2 data-i18n="faq.title">The useful questions.</h2>
+      </div>
+      <div class="faq-list">
+        <details class="panel">
+          <summary data-i18n="faq.q1">Can I choose another material or size?</summary>
+          <p data-i18n="faq.a1">Yes. Each buy button goes to the matching Werk aan de Muur product page where you can customize material, size and finish.</p>
+        </details>
+        <details class="panel">
+          <summary data-i18n="faq.q2">Do the buttons open in a new tab?</summary>
+          <p data-i18n="faq.a2">Yes. The collection page stays open while the product page opens separately.</p>
+        </details>
+        <details class="panel">
+          <summary data-i18n="faq.q3">Is this page mobile friendly?</summary>
+          <p data-i18n="faq.a3">Yes. The layout, image rhythm, CTA sizing and menu behavior are all tuned for mobile first.</p>
+        </details>
+      </div>
+    </section>
 
-  <!-- Artwork 1: White Marble / Kintsugi -->
-  <section class="artwork-section reveal" aria-labelledby="art1-title">
-    <div class="artwork-container">
-      <div class="artwork-frame">
-        <img class="artwork-img" src="img/artwork-1.webp" alt="Meisje met de Parel herinterpretatie: wit marmer met fijne gouden scheuren, kintsugi-stijl transformatie" width="900" height="1200" loading="eager" decoding="async">
+    <section class="section final-cta" id="final-cta">
+      <div class="panel final-cta-panel">
+        <div class="eyebrow" data-i18n="final.eyebrow">Final call</div>
+        <h2 data-i18n="final.title">Choose the version that keeps pulling you back.</h2>
+        <p data-i18n="final.text">From powder and marble to chrome and gold, each work keeps the Vermeer silhouette and changes the emotional temperature.</p>
+        <a class="btn btn-primary btn-large" href="#collection" data-i18n="final.cta">View collection and buy</a>
       </div>
-      <div class="artwork-meta">
-        <p class="artwork-number" data-i18n="artNum1">I van VII</p>
-        <h2 class="artwork-title" id="art1-title" data-i18n="artTitle1">Marmer &amp; Goud</h2>
-        <p class="artwork-subtitle" data-i18n="artSub1">Wit marmer, fijne gouden scheuren</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Artwork 2: Gold Burst -->
-  <section class="artwork-section reveal" aria-labelledby="art2-title">
-    <div class="artwork-container">
-      <div class="artwork-frame">
-        <img class="artwork-img" src="img/artwork-2.webp" alt="Meisje met de Parel herinterpretatie: gouden explosie met bladgoud en druipend goud over het gezicht" width="900" height="1200" loading="lazy" decoding="async">
-      </div>
-      <div class="artwork-meta">
-        <p class="artwork-number" data-i18n="artNum2">II van VII</p>
-        <h2 class="artwork-title" id="art2-title" data-i18n="artTitle2">Gouden Uitbarsting</h2>
-        <p class="artwork-subtitle" data-i18n="artSub2">Bladgoud, druipende transformatie</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Artwork 3: Stone / Gold Flow -->
-  <section class="artwork-section reveal" aria-labelledby="art3-title">
-    <div class="artwork-container">
-      <div class="artwork-frame">
-        <img class="artwork-img" src="img/artwork-3.webp" alt="Meisje met de Parel herinterpretatie: grijswitte steen met vloeiend goud effect" width="900" height="1200" loading="lazy" decoding="async">
-      </div>
-      <div class="artwork-meta">
-        <p class="artwork-number" data-i18n="artNum3">III van VII</p>
-        <h2 class="artwork-title" id="art3-title" data-i18n="artTitle3">Steen &amp; Stroom</h2>
-        <p class="artwork-subtitle" data-i18n="artSub3">Gemarmerd steen, gouden vloed</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Artwork 4: Lapis / Blue Drip -->
-  <section class="artwork-section reveal" aria-labelledby="art4-title">
-    <div class="artwork-container">
-      <div class="artwork-frame">
-        <img class="artwork-img" src="img/artwork-4.webp" alt="Meisje met de Parel herinterpretatie: blauw pigment druipend over het gezicht als lapis lazuli verf" width="900" height="1200" loading="lazy" decoding="async">
-      </div>
-      <div class="artwork-meta">
-        <p class="artwork-number" data-i18n="artNum4">IV van VII</p>
-        <h2 class="artwork-title" id="art4-title" data-i18n="artTitle4">Lapis Druppel</h2>
-        <p class="artwork-subtitle" data-i18n="artSub4">Blauw pigment, druipende verf</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Mid-page CTA -->
-  <section class="mid-cta reveal" aria-label="Order collection">
-    <div class="mid-cta-inner">
-      <h2 class="mid-cta-title" data-i18n="midCtaTitle">Maak de collectie compleet</h2>
-      <p class="mid-cta-text" data-i18n="midCtaText">Alle zeven werken zijn beschikbaar als hoogwaardig wandkunstwerk in diverse formaten en materialen.</p>
-      <a href="#" class="cta-btn" id="mid-cta-btn" data-i18n-text="ctaLabel">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-          <line x1="3" y1="6" x2="21" y2="6"/>
-          <path d="M16 10a4 4 0 01-8 0"/>
-        </svg>
-        <span data-i18n="ctaLabel">Bestel nu</span>
-      </a>
-    </div>
-  </section>
-
-  <!-- Artwork 5: Rose Lacquer -->
-  <section class="artwork-section reveal" aria-labelledby="art5-title">
-    <div class="artwork-container">
-      <div class="artwork-frame">
-        <img class="artwork-img" src="img/artwork-5.webp" alt="Meisje met de Parel herinterpretatie: roze lakglans smelt over het gelaat als kosmische nevel" width="900" height="1200" loading="lazy" decoding="async">
-      </div>
-      <div class="artwork-meta">
-        <p class="artwork-number" data-i18n="artNum5">V van VII</p>
-        <h2 class="artwork-title" id="art5-title" data-i18n="artTitle5">Rozenlak</h2>
-        <p class="artwork-subtitle" data-i18n="artSub5">Roze lak, smeltende glans</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Artwork 6: Chrome / Liquid Metal -->
-  <section class="artwork-section reveal" aria-labelledby="art6-title">
-    <div class="artwork-container">
-      <div class="artwork-frame">
-        <img class="artwork-img" src="img/artwork-6.webp" alt="Meisje met de Parel herinterpretatie: vloeibaar chroom en metalen druppels over het gezicht" width="900" height="1200" loading="lazy" decoding="async">
-      </div>
-      <div class="artwork-meta">
-        <p class="artwork-number" data-i18n="artNum6">VI van VII</p>
-        <h2 class="artwork-title" id="art6-title" data-i18n="artTitle6">Vloeibaar Chroom</h2>
-        <p class="artwork-subtitle" data-i18n="artSub6">Chroom, vloeibaar metaal</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Artwork 7: White Powder / Explosion -->
-  <section class="artwork-section reveal" aria-labelledby="art7-title">
-    <div class="artwork-container">
-      <div class="artwork-frame">
-        <img class="artwork-img" src="img/artwork-7.webp" alt="Meisje met de Parel herinterpretatie: wit poeder explosie vervaagt het gezicht in een wolk van stof" width="900" height="1200" loading="lazy" decoding="async">
-      </div>
-      <div class="artwork-meta">
-        <p class="artwork-number" data-i18n="artNum7">VII van VII</p>
-        <h2 class="artwork-title" id="art7-title" data-i18n="artTitle7">Poeder Explosie</h2>
-        <p class="artwork-subtitle" data-i18n="artSub7">Wit poeder, explosieve desintegratie</p>
-      </div>
-    </div>
-  </section>
-
+    </section>
   </main>
 
-  <!-- =================================================================
-       FOOTER
-       ================================================================= -->
-  <footer class="site-footer" id="footer" role="contentinfo">
-    <div class="footer-inner">
-      <div class="footer-logo" aria-hidden="true">
-        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="50" cy="38" r="22" stroke="#a89f94" stroke-width="3" fill="none"/>
-          <circle cx="42" cy="33" r="3.5" fill="#a89f94"/>
-          <circle cx="58" cy="33" r="3.5" fill="#a89f94"/>
-          <path d="M40 44 Q42 50 36 62 Q32 70 28 74" stroke="#a89f94" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-          <path d="M46 46 Q47 54 42 66 Q39 72 38 78" stroke="#a89f94" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-          <path d="M54 46 Q53 54 58 66 Q61 72 62 78" stroke="#a89f94" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-          <path d="M60 44 Q58 50 64 62 Q68 70 72 74" stroke="#a89f94" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-          <path d="M35 42 Q30 48 24 58 Q20 65 18 70" stroke="#a89f94" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-          <path d="M65 42 Q70 48 76 58 Q80 65 82 70" stroke="#a89f94" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-        </svg>
-      </div>
-      <p class="footer-text" data-i18n="footerText">
-        Zeven eigentijdse herinterpretaties van Johannes Vermeer's Meisje met de Parel.<br>
-        Gecre&euml;erd door Floris van den Oever &mdash; OEVER.ART
-      </p>
-      <div class="footer-links">
-        <a href="https://www.instagram.com/oever.art/" target="_blank" rel="nofollow noopener noreferrer" class="footer-link">Instagram</a>
-        <a href="#" class="footer-link" id="footer-buy-link" data-i18n="footerBuyLabel">Bekijk collectie</a>
-      </div>
-
-      <!-- Closing CTA -->
-      <div style="margin-bottom:var(--space-xl)">
-        <a href="#" class="cta-btn" id="footer-cta-btn" data-i18n-text="ctaLabel">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-            <line x1="3" y1="6" x2="21" y2="6"/>
-            <path d="M16 10a4 4 0 01-8 0"/>
-          </svg>
-          <span data-i18n="ctaLabel">Bestel nu</span>
-        </a>
-      </div>
-
-      <p class="footer-copy">&copy; 2024&ndash;2026 OEVER.ART. <span data-i18n="rights">Alle rechten voorbehouden.</span></p>
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <span class="brand-mark-wrap footer-mark"><img src="assets/oever-mark-animated.svg" alt="" class="brand-mark" /></span>
+      <img src="assets/oever-logo-traced.svg" alt="OEVER.ART" class="brand-logo footer-logo" />
+    </div>
+    <div class="footer-copy">
+      <p data-i18n="footer.text">Seven reinterpretations of Vermeer, presented with a premium bilingual funnel and direct buy routes.</p>
     </div>
   </footer>
 
-  <!-- =================================================================
-       STICKY CTA
-       ================================================================= -->
-  <div class="sticky-cta" id="sticky-cta" role="complementary" aria-label="Quick order">
-    <a href="#" class="cta-btn" id="sticky-cta-btn" data-i18n-text="ctaLabel">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-        <line x1="3" y1="6" x2="21" y2="6"/>
-        <path d="M16 10a4 4 0 01-8 0"/>
-      </svg>
-      <span data-i18n="ctaLabel">Bestel nu</span>
-    </a>
-  </div>
-
-</div><!-- /.site-wrapper -->
-
-<!-- =====================================================================
-     JAVASCRIPT — Region, Language, Scroll, Animations
-     ===================================================================== -->
-<script>
-(function(){
-  'use strict';
-
-  /* ==================================================================
-     CONFIGURATION — Centralized content, locale, region, CTA config
-     ================================================================== */
-  const CONFIG = {
-    urls: {
-      nl: 'https://www.werkaandemuur.nl/nl/album/Zeven-Herinterpretaties-van-Vermeer/65815/96023',
-      en: 'https://www.artheroes.com/en/gallery/Zeven-Herinterpretaties-van-Vermeer/65815/96023'
-    },
-    nlCountries: ['NL'],
-    defaultLang: 'nl',
-    i18n: {
-      nl: {
-        eyebrow: 'Collectie 2024 \u2014 Zeven Werken',
-        heroTitle: 'Vermeer<br>Herinterpretaties',
-        heroSubtitle: 'Zeven eigentijdse herinterpretaties van het Meisje met de Parel. Licht, textuur, onderbreking en transformatie \u2014 klassieke sfeer ontmoet moderne spanning. Door OEVER.ART & Floris van den Oever.',
-        exclusive: 'Exclusief verkrijgbaar op werkaandemuur.nl',
-        ctaLabel: 'Bestel nu',
-        scrollText: 'Scroll',
-        artNum1: 'I van VII', artTitle1: 'Marmer & Goud', artSub1: 'Wit marmer, fijne gouden scheuren',
-        artNum2: 'II van VII', artTitle2: 'Gouden Uitbarsting', artSub2: 'Bladgoud, druipende transformatie',
-        artNum3: 'III van VII', artTitle3: 'Steen & Stroom', artSub3: 'Gemarmerd steen, gouden vloed',
-        artNum4: 'IV van VII', artTitle4: 'Lapis Druppel', artSub4: 'Blauw pigment, druipende verf',
-        artNum5: 'V van VII', artTitle5: 'Rozenlak', artSub5: 'Roze lak, smeltende glans',
-        artNum6: 'VI van VII', artTitle6: 'Vloeibaar Chroom', artSub6: 'Chroom, vloeibaar metaal',
-        artNum7: 'VII van VII', artTitle7: 'Poeder Explosie', artSub7: 'Wit poeder, explosieve desintegratie',
-        midCtaTitle: 'Maak de collectie compleet',
-        midCtaText: 'Alle zeven werken zijn beschikbaar als hoogwaardig wandkunstwerk in diverse formaten en materialen.',
-        footerText: 'Zeven eigentijdse herinterpretaties van Johannes Vermeer\u2019s Meisje met de Parel.<br>Gecre\u00eberd door Floris van den Oever \u2014 OEVER.ART',
-        footerBuyLabel: 'Bekijk collectie',
-        rights: 'Alle rechten voorbehouden.',
-        docTitle: 'Zeven Herinterpretaties van Vermeer | OEVER.ART \u2014 Collectie Meisje met de Parel',
-        metaDesc: 'Ontdek zeven eigentijdse herinterpretaties van Johannes Vermeer\u2019s Meisje met de Parel door OEVER.ART. Collectible wandkunst waar klassieke sfeer en moderne spanning samenkomen.'
-      },
-      en: {
-        eyebrow: 'Collection 2024 \u2014 Seven Works',
-        heroTitle: 'Vermeer<br>Reinterpretations',
-        heroSubtitle: 'Seven contemporary reinterpretations of the Girl with a Pearl Earring. Light, texture, interruption and transformation \u2014 classical atmosphere meets modern tension. By OEVER.ART & Floris van den Oever.',
-        exclusive: 'Exclusively available on artheroes.com',
-        ctaLabel: 'Order now',
-        scrollText: 'Scroll',
-        artNum1: 'I of VII', artTitle1: 'Marble & Gold', artSub1: 'White marble, fine golden cracks',
-        artNum2: 'II of VII', artTitle2: 'Golden Burst', artSub2: 'Gold leaf, dripping transformation',
-        artNum3: 'III of VII', artTitle3: 'Stone & Flow', artSub3: 'Marbled stone, golden flow',
-        artNum4: 'IV of VII', artTitle4: 'Lapis Drip', artSub4: 'Blue pigment, dripping paint',
-        artNum5: 'V of VII', artTitle5: 'Rose Lacquer', artSub5: 'Pink lacquer, melting sheen',
-        artNum6: 'VI of VII', artTitle6: 'Liquid Chrome', artSub6: 'Chrome, liquid metal',
-        artNum7: 'VII of VII', artTitle7: 'Powder Explosion', artSub7: 'White powder, explosive disintegration',
-        midCtaTitle: 'Complete the collection',
-        midCtaText: 'All seven works are available as high-quality wall art in various sizes and materials.',
-        footerText: 'Seven contemporary reinterpretations of Johannes Vermeer\u2019s Girl with a Pearl Earring.<br>Created by Floris van den Oever \u2014 OEVER.ART',
-        footerBuyLabel: 'View collection',
-        rights: 'All rights reserved.',
-        docTitle: 'Seven Reinterpretations of Vermeer | OEVER.ART \u2014 Girl with a Pearl Earring Collection',
-        metaDesc: 'Discover seven contemporary reinterpretations of Johannes Vermeer\u2019s Girl with a Pearl Earring by OEVER.ART. Collectible wall art where classical atmosphere meets modern tension.'
-      }
-    }
-  };
-
-  /* ==================================================================
-     STATE
-     ================================================================== */
-  let currentLang = CONFIG.defaultLang;
-  let detectedCountry = null;
-
-  /* ==================================================================
-     REGION DETECTION — Self-contained, no paid API
-     ================================================================== */
-  function detectRegion(){
-    return new Promise(function(resolve){
-      // Method 1: Check browser language
-      var browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
-      if(browserLang.startsWith('nl')){
-        resolve('NL');
-        return;
-      }
-
-      // Method 2: Timezone heuristic
-      try {
-        var tz = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
-        if(tz.indexOf('Amsterdam') !== -1 || tz === 'Europe/Amsterdam'){
-          resolve('NL');
-          return;
-        }
-      } catch(e){}
-
-      // Method 3: Free IP geolocation (no API key needed)
-      var timeout = setTimeout(function(){ resolve('INT'); }, 3000);
-
-      fetch('https://ipapi.co/json/', {mode:'cors'})
-        .then(function(r){ return r.json(); })
-        .then(function(data){
-          clearTimeout(timeout);
-          resolve(data.country_code || 'INT');
-        })
-        .catch(function(){
-          clearTimeout(timeout);
-          // Fallback: try another free service
-          fetch('https://ip2c.org/s')
-            .then(function(r){ return r.text(); })
-            .then(function(text){
-              var parts = text.split(';');
-              resolve(parts[1] || 'INT');
-            })
-            .catch(function(){ resolve('INT'); });
-        });
-    });
+  <script>
+    window.__ARTWORKS__ = [
+  {
+    "image": "assets/artwork-1.webp",
+    "title_nl": "Poederexplosie",
+    "title_en": "Powder Explosion",
+    "desc_nl": "Een verstilde explosie van pigment die stilte en impact tegelijk vasthoudt.",
+    "desc_en": "A suspended burst of pigment holding stillness and impact in the same frame.",
+    "url": "https://www.werkaandemuur.nl/nl/werk/Meisje-met-de-parel-van-Vermeer-Poederexplosie/1901513/94?mediumId=13&size=55x75"
+  },
+  {
+    "image": "assets/artwork-2.webp",
+    "title_nl": "Blauwe verfstreek",
+    "title_en": "Blue Paint Stroke",
+    "desc_nl": "Intense kobaltblauwe verstoring, direct en tactiel, op een iconisch gezicht.",
+    "desc_en": "A cobalt interruption, tactile and direct, laid across an iconic face.",
+    "url": "https://www.werkaandemuur.nl/nl/werk/Meisje-met-de-parel-van-Vermeer-Blauwe-verfstreek/1901520/94?mediumId=13&size=55x75"
+  },
+  {
+    "image": "assets/artwork-3.webp",
+    "title_nl": "Gebroken marmer",
+    "title_en": "Broken Marble",
+    "desc_nl": "Klassieke zachtheid ontmoet marmer, breuklijnen en herstelde spanning.",
+    "desc_en": "Classical softness meets marble, fracture lines and repaired tension.",
+    "url": "https://www.werkaandemuur.nl/nl/werk/Meisje-met-de-parel-van-Vermeer-Gebroken-marmer/1901525/94?mediumId=13&size=55x75"
+  },
+  {
+    "image": "assets/artwork-4.webp",
+    "title_nl": "Goudbreuk",
+    "title_en": "Gold Fracture",
+    "desc_nl": "Gouden breukvlakken en druppels maken schade ineens kostbaar.",
+    "desc_en": "Gold fissures and drips turn damage into something precious.",
+    "url": "https://www.werkaandemuur.nl/nl/werk/Meisje-met-de-parel-van-Vermeer-Goudbreuk/1901515/94?mediumId=13&size=55x75"
+  },
+  {
+    "image": "assets/artwork-5.webp",
+    "title_nl": "Roze nevel",
+    "title_en": "Pink Haze",
+    "desc_nl": "Een zachte wolk die het portret niet verbergt, maar juist laat ademen.",
+    "desc_en": "A soft haze that does not hide the portrait, it lets it breathe.",
+    "url": "https://www.werkaandemuur.nl/nl/werk/Meisje-met-de-parel-van-Vermeer-Roze-nevel/1901518/94?mediumId=13&size=55x75"
+  },
+  {
+    "image": "assets/artwork-6.webp",
+    "title_nl": "Vloeibaar chroom",
+    "title_en": "Liquid Chrome",
+    "desc_nl": "Een spiegelend masker van vloeibaar metaal met futuristische spanning.",
+    "desc_en": "A reflective liquid-metal mask with a futuristic edge.",
+    "url": "https://www.werkaandemuur.nl/nl/werk/Meisje-met-de-parel-van-Vermeer-Vloeibaar-chroom/1901524/94?mediumId=13&size=55x75"
+  },
+  {
+    "image": "assets/artwork-7.webp",
+    "title_nl": "Zwarte inktinslag",
+    "title_en": "Black Ink Impact",
+    "desc_nl": "Een zwarte inslag die het beeld radicaal centreert en verdiept.",
+    "desc_en": "A black impact that radically recenters and deepens the image.",
+    "url": "https://www.werkaandemuur.nl/nl/werk/Meisje-met-de-parel-van-Vermeer-Zwarte-inktinslag/1901522/94?mediumId=13&size=55x75"
   }
-
-  /* ==================================================================
-     LANGUAGE SYSTEM
-     ================================================================== */
-  function setLanguage(lang){
-    currentLang = lang;
-    var strings = CONFIG.i18n[lang];
-    if(!strings) return;
-
-    // Update HTML lang attribute
-    document.documentElement.lang = lang;
-
-    // Update all [data-i18n] elements
-    document.querySelectorAll('[data-i18n]').forEach(function(el){
-      var key = el.getAttribute('data-i18n');
-      if(strings[key] !== undefined){
-        el.innerHTML = strings[key];
-      }
-    });
-
-    // Update CTA text spans
-    document.querySelectorAll('[data-i18n-text]').forEach(function(el){
-      var key = el.getAttribute('data-i18n-text');
-      var span = el.querySelector('span[data-i18n]');
-      if(span && strings[key] !== undefined){
-        span.textContent = strings[key];
-      }
-    });
-
-    // Update document title and meta
-    document.title = strings.docTitle;
-    var metaDesc = document.querySelector('meta[name="description"]');
-    if(metaDesc) metaDesc.setAttribute('content', strings.metaDesc);
-
-    // Update OG tags
-    var ogTitle = document.querySelector('meta[property="og:title"]');
-    if(ogTitle) ogTitle.setAttribute('content', strings.docTitle);
-    var ogDesc = document.querySelector('meta[property="og:description"]');
-    if(ogDesc) ogDesc.setAttribute('content', strings.metaDesc);
-
-    // Update all CTA URLs
-    var url = CONFIG.urls[lang] || CONFIG.urls.en;
-    document.querySelectorAll('#hero-cta-btn, #mid-cta-btn, #footer-cta-btn, #sticky-cta-btn, #footer-buy-link').forEach(function(el){
-      el.href = url;
-      if(el.id !== 'footer-buy-link'){
-        el.setAttribute('target', '_blank');
-        el.setAttribute('rel', 'nofollow noopener noreferrer');
-      }
-    });
-    var footerBuy = document.getElementById('footer-buy-link');
-    if(footerBuy){
-      footerBuy.href = url;
-      footerBuy.setAttribute('target', '_blank');
-      footerBuy.setAttribute('rel', 'nofollow noopener noreferrer');
-    }
-
-    // Update toggle buttons
-    document.querySelectorAll('.lang-btn').forEach(function(btn){
-      var isActive = btn.getAttribute('data-lang') === lang;
-      btn.classList.toggle('active', isActive);
-      btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
-    });
-
-    // Update URL without reload
-    if(window.history && window.history.replaceState){
-      var newUrl = window.location.pathname + '?lang=' + lang;
-      window.history.replaceState(null, '', newUrl);
-    }
-  }
-
-  /* ==================================================================
-     SCROLL OBSERVERS
-     ================================================================== */
-  function initScrollObservers(){
-    // Reveal animations
-    var revealObserver = new IntersectionObserver(function(entries){
-      entries.forEach(function(entry){
-        if(entry.isIntersecting){
-          entry.target.classList.add('visible');
-        }
-      });
-    }, {threshold: 0.12, rootMargin: '0px 0px -60px 0px'});
-
-    document.querySelectorAll('.reveal').forEach(function(el){
-      revealObserver.observe(el);
-    });
-
-    // Header scroll effect
-    var header = document.querySelector('.site-header');
-    var lastScroll = 0;
-    window.addEventListener('scroll', function(){
-      var scrollY = window.pageYOffset || document.documentElement.scrollTop;
-      header.classList.toggle('scrolled', scrollY > 60);
-      lastScroll = scrollY;
-    }, {passive: true});
-
-    // Sticky CTA visibility
-    var stickyCta = document.getElementById('sticky-cta');
-    var footer = document.getElementById('footer');
-    var heroSection = document.querySelector('.hero');
-    var stickyShown = false;
-
-    function updateStickyCta(){
-      var scrollY = window.pageYOffset || document.documentElement.scrollTop;
-      var windowH = window.innerHeight;
-      var docH = document.documentElement.scrollHeight;
-
-      // Show after scrolling past hero
-      var heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
-      var pastHero = scrollY > heroBottom - windowH * 0.5;
-
-      // Hide near footer
-      var footerTop = footer.offsetTop;
-      var nearFooter = (scrollY + windowH) > (footerTop - 40);
-
-      if(pastHero && !nearFooter){
-        stickyCta.classList.add('visible');
-        stickyCta.classList.remove('hidden-footer');
-      } else if(nearFooter){
-        stickyCta.classList.add('hidden-footer');
-        stickyCta.classList.remove('visible');
-      } else {
-        stickyCta.classList.remove('visible');
-        stickyCta.classList.remove('hidden-footer');
-      }
-    }
-
-    window.addEventListener('scroll', updateStickyCta, {passive: true});
-    window.addEventListener('resize', updateStickyCta, {passive: true});
-  }
-
-  /* ==================================================================
-     LANGUAGE TOGGLE
-     ================================================================== */
-  function initLangToggle(){
-    document.querySelectorAll('.lang-btn').forEach(function(btn){
-      btn.addEventListener('click', function(){
-        var lang = this.getAttribute('data-lang');
-        setLanguage(lang);
-      });
-    });
-  }
-
-  /* ==================================================================
-     INITIALIZATION
-     ================================================================== */
-  function init(){
-    // Check URL parameter first
-    var urlParams = new URLSearchParams(window.location.search);
-    var urlLang = urlParams.get('lang');
-
-    if(urlLang === 'nl' || urlLang === 'en'){
-      setLanguage(urlLang);
-    } else {
-      // Auto-detect region
-      detectRegion().then(function(country){
-        detectedCountry = country;
-        var lang = CONFIG.nlCountries.indexOf(country) !== -1 ? 'nl' : 'en';
-        setLanguage(lang);
-      });
-    }
-
-    initLangToggle();
-    initScrollObservers();
-  }
-
-  // Start when DOM is ready
-  if(document.readyState === 'loading'){
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
-
-})();
-</script>
-
+];
+  </script>
+  <script src="script.js"></script>
 </body>
 </html>

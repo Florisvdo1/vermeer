@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" fill="none" aria-label="Animated OEVER mark">
+  <defs>
+    <linearGradient id="stroke" x1="20" y1="20" x2="260" y2="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f6f2ea"/>
+      <stop offset="0.5" stop-color="#8ea5d6"/>
+      <stop offset="1" stop-color="#efe2b7"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#glow)" stroke="url(#stroke)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path class="draw draw-a" d="M215 57c-26 8-52 36-58 70c-6 33 5 54 25 75c15 15 31 32 38 53c7 21 1 44-19 64"/>
+    <path class="draw draw-b" d="M122 68c-22 16-34 43-34 74c0 38 20 60 53 83c31 22 52 43 56 74"/>
+    <path class="draw draw-c" d="M161 98c17 0 31 14 31 31c0 15-12 29-29 34c-17 4-33-4-41-18"/>
+    <path class="draw draw-d" d="M144 108c8-20 28-34 51-34c30 0 55 23 58 52c3 34-18 56-49 73"/>
+    <path class="draw draw-e" d="M196 149c20 7 34 26 34 48c0 28-23 51-51 51c-26 0-47-19-50-43"/>
+    <path class="draw draw-f" d="M188 210c18 2 32 17 32 35c0 19-15 34-34 34c-18 0-33-13-34-31"/>
+    <path class="pearl draw draw-g" d="M225 222c0 17-13 30-30 30s-30-13-30-30s13-30 30-30s30 13 30 30Z"/>
+    <path class="spark spark-1" d="M254 70l8-18"/>
+    <path class="spark spark-2" d="M272 90l18-7"/>
+    <path class="spark spark-3" d="M274 116l17 6"/>
+  </g>
+  <style>
+    .draw {
+      stroke-dasharray: 600;
+      stroke-dashoffset: 600;
+      animation: reveal 8s ease-in-out infinite;
+    }
+    .draw-b { animation-delay: .35s; }
+    .draw-c { animation-delay: .55s; }
+    .draw-d { animation-delay: .8s; }
+    .draw-e { animation-delay: 1.05s; }
+    .draw-f { animation-delay: 1.25s; }
+    .draw-g { animation-delay: 1.45s; }
+    .spark { stroke-dasharray: 40; stroke-dashoffset: 40; animation: reveal 8s ease-in-out infinite; opacity: .7; }
+    .spark-1 { animation-delay: 1.7s; }
+    .spark-2 { animation-delay: 1.85s; }
+    .spark-3 { animation-delay: 2s; }
+    .pearl { fill: rgba(246,242,234,.08); }
+    @keyframes reveal {
+      0%,12% { stroke-dashoffset: 600; opacity: 0; }
+      20%,72% { stroke-dashoffset: 0; opacity: 1; }
+      100% { stroke-dashoffset: -600; opacity: 0; }
+    }
+  </style>
+</svg>
